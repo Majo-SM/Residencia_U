@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <a href="javascript:history.back()"><img src="images/back"  width="50px" alt="Botón" ></a>
+<div class="container">
+<header class="header" style="color:#FF0000"> <!--Encabezado-->
+  <nav> <!--para crear el menu-->
+  <img src="residencia.png"ALIGN="left">
+    <a href="index_inicio.html">Inicio</a> -  <!--Para poner links-->
+    <a href="galeria.html">Ver catalogo</a> -  
+  </nav>
+</header>
+<div class="main">
+<h1 ALIGN=LEFT> Contáctenos  </h1>
+<h3 ALIGN=LEFT>Ponerse en contácto</h3>
+<p ALIGN=LEFT> Nuestro soporte or correo electrónico súper rápido y amigable
+responderá sus consultas en 24 horas (¡Normalmente mucho más rápido que que eso!)</p>
+<u>contacto@uleam.edu.ec</u>
+<h3 ALIGN=LEFT>¿Puedo hablar con usted por teléfono?</h3>
+<p ALIGN=LEFT> ¡Seguro! Símplemente envienos una nota con su número de teléfono y una hora que sea 
+conveniente para usted yy le llameremos</p>
+<h3 ALIGN=LEFT>Nuestra dirección de Oficina</h3>
+<p ALIGN=LEFT> Av. Circunvalación - Vía a San Mateo
+<br> Manta - Manabí - Ecuador.</p>
+</div>
+
+<form action="" class="form" id="form" autocomplete="off">
+
+  <div class="form-input myname"><!--Para el campo nombre-->
+<label for="myname">Nombre</label>
+<input type="text" id="myname" >
+<p class="mensajeError"></p> <!--Clase para -->
+</div>
+
+<div class="form-input email"><!--Para el campo de correo-->
+<label for="email">Correo electrónico</label>
+<input type="email" id="email" autofocus required><p class="mensajeError"></p>
+</div>
+
+<div class="form-input mobile"><!--Para el campo Celular-->
+<label for="mobile">Celular</label>
+<input type="text" id="mobile" autofocus required><p class="mensajeError"></p>
+</div>
+
+<div class="form-input message"><!--Para el campo Mensaje-->
+<label for="message">Mensaje</label>
+<input type="text" id="message" autofocus required><p class="mensajeError"></p>
+</div>
+
+<div class="form-boton" > <!--Boton enviar-->
+<input type="submit" value="Enviar">
+</div>
+
+<p class="mensajeCorrecto"></p>
+</form>
+<script src="validacion.js"></script><!--Vinculo con js-->
+<div class="footer">
+    Residencia Universitaria ULEAM | Ing. Patricia Quiroz | Aplicaciones Web I
+    </div>
+</body>
+</html>

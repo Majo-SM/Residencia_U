@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detalle de Residencia Universitaria</title> 
+        <link rel="stylesheet" href="style_doble.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <div class="logo">
+                    <a href="javascript:history.back().html"><img src="images/back"  alt="Botón"></a>
+                </div>
+                 <a class="fondo-textob" href="index_iniciosesión.html">INICIAR SESIÓN</a>
+            </nav>
+    
+            <div class="columna">
+                <div class="columna-1">
+                    <h1>Habitación doble en <br>residencia ULEAM</h1>
+                    <p> Habitación doble en $200 con servicios incluidos, cuenta con:
+                            <ol>- WIFI</ol>
+                            <ol> - Teléfono convencional</ol>
+                            <ol> - Ventilaciòn central</ol>
+                            <ol>-  Servicio de limpieza 2 veces por semana.</ol>
+                    </p>
+                    <a class="fondo-textob" href="alquiler.html">ALQUILAR</a>
+    
+                    <ul>
+                        <li class="btn active"></li>
+                        <li class="btn"></li>
+                        <li class="btn"></li>
+                    </ul>
+                </div>
+                <div class="columna-2">
+                    <img src="images/doble3.jpg" id="banner"  width="940" height="800">
+                </div>
+            </div>
+        </div>
+        <script> 
+            var btn = document.getElementsByClassName("btn");
+            var banner =  document.getElementById("banner");
+    
+            btn[0].onclick = function(){
+                 banner.src = "images/doble3.jpg";
+    
+                 banner.classList.add("zoom");
+                 setTimeout(function(){
+                     banner.classList.remove("zoom");
+                  },500);
+    
+                }
+            btn[1].onclick = function(){
+                banner.src = "images/doble.jpg";
+            }
+            btn[2].onclick = function(){
+                 banner.src = "images/doble2.jpg";
+                }
+            </script>
+    </body> 
+</html>

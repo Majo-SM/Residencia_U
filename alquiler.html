@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>RESIDENCIA UNIVERSITARIA</title>
+<link href="alquiler.css" rel="stylesheet" />
+</head>
+<body>
+    
+<div class="container">
+<form action="" class="ingreso" id="ingreso">
+    <a href="javascript:history.back()"><img src="images/back"  width="50px" alt="Botón" ></a>
+<p class="titulo">
+Ingreso de datos para Contrato.
+</p>
+<h2 class="titulos">Arrendador/a</h2>
+<div class="ingreso_input nombre">
+<label for="nombre">Ingrese su nombre:</label>
+<input type="text" id="nombre" placeholder="&#128113; Ingrese nombre"
+minlength="5" maxlength="40" required>
+<p class="error"></p>
+</div>
+<div class="ingreso_input apellido">
+    <label for="apellido">Ingrese su apellido:</label>
+    <input type="text" id="apellido" placeholder="&#x1f9d1; Ingrese apellidos"
+    minlength="5" maxlength="40" required>
+    <p class="error"></p>
+    </div>
+<div class="ingreso_input cedula">
+<label for="cedula">Ingrese su cédula:</label>
+<input type="integer" id="cedula" placeholder="Ingrese cédula sin guión" maxlength="10" required>
+<p class="error"></p>
+</div>
+<div class="ingreso_input habitacion">
+<label for="habitacion">Tipo de habitación:
+    <input type="text" id="habitacion" placeholder="&#x1f6cc; Ingrese tipo de habitación">
+    <p class="error"></p>
+</label>
+<p class="error"></p>
+</div>
+<div class="ingreso_input monto">
+    <label for="monto">Monto a pagar mensualmente:</label>
+    <input type="double" id="monto" placeholder="&#x1f6cc; Ingrese monto">
+    <p class="error"></p>
+    <a class="fondo-textob" href="pago.html">Realice el pago</a>
+    </div>
+    <h2 class="titulos">Arrendatario/a</h2>
+
+    <div class="ingreso_input nombress">
+    <label for="nombress">Ingrese su nombre:</label>
+    <input type="text" id="nombress" placeholder="&#128113; Ingrese nombre"
+    minlength="5" maxlength="40" required>
+    <p class="error"></p>
+    </div>
+    <div class="ingreso_input apellidoss">
+        <label for="apellidoss">Ingrese su apellido:</label>
+        <input type="text" id="apellidoss" placeholder="&#x1f9d1; Ingrese apellidos"
+        minlength="5" maxlength="40" required>
+        <p class="error"></p>
+        </div>
+    <div class="ingreso_input cedulass">
+    <label for="cedulass">Ingrese su cédula:</label>
+    <input type="integer" id="cedulass" placeholder="Ingrese cédula sin guión" maxlength="10" required>
+    <p class="error"></p>
+    </div>
+   
+<div >
+    <center>
+      <input type="submit" id="Send" value="Genere su contrato" >
+    </center>
+</div>
+
+<p class="mensajeafirmativo"></p>
+</form>
+</div>
+<script src="alquiler.js"></script>
+</body>
+</html>

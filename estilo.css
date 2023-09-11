@@ -1,0 +1,127 @@
+.header,
+.footer,
+.main,
+.form {
+padding: 50px;
+}
+body {
+    margin: 0 auto;
+    background: /*para el fondo de cuadritos */
+    radial-gradient(rgb(241, 209, 209) 3px, transparent 4px),
+    radial-gradient(rgb(203, 211, 255) 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4
+    75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4
+    76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px
+    109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    }
+    
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1%;
+    grid-template-rows: 7% auto auto;
+    row-gap: 1%;
+    width: 95%;
+    max-width: 1500px;
+    margin: 1.6em auto;
+    }
+    .header,
+    .footer {
+    grid-column:span 3;
+    }
+    .header,
+    .footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    }
+      
+.header {
+    color:black;
+    text-align:right;
+    letter-spacing: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #ffffff;
+    background-size: cover;
+    padding: 2%;
+    
+}
+.footer {
+    background-color: #041346;
+    background: #e4e2e2;
+    padding: 2%;
+    color:  #876691;
+    text-align: center;
+}
+.main{
+    grid-column: 1;
+    grid-row: span 2;
+    line-height : 34px;
+    text-align: left;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    }
+.main h3{
+    color: #041346;
+}
+.form{
+    background-color: #ffffff;
+    grid-column: 2;
+    grid-row: span 2;
+    line-height : 34px;
+    text-align: left;
+}
+.form-input {
+    margin-bottom: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+.form-input label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--ctexto);
+    }
+.form-input input {/*Para que se vea como una linea bien bonis*/
+    width: 100%;
+   height: 28px;
+    outline:auto;
+    background: none;
+    outline-color: #041346;
+    
+    }
+.form-input #message{
+    width: 100%;
+    height: 200px;
+     outline:auto;
+     background: none;
+     outline-color: #041346;
+}
+.form-boton input {/* Para ek boton de enviar */
+    background: #041346;
+    color:rgb(255, 255, 255);
+    padding: 10px 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+    }
+    /* Para que el boton cambie de color */
+    .form-boton input:hover {
+    background: rgb(255, 139, 85);
+    transition: 0.5s;
+    }
+    .header img{
+        width: 20%;
+        height: 3%;
+        margin-top: -1.5%;
+        
+    }
+    .header a{
+        color: #0a0a0a;
+    }
